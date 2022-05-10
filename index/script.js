@@ -1,9 +1,9 @@
+let options = {LINK_SELECTOR: 'a',debugMode: true,};
+const swup = new Swup({
+    options,
+    plugins: [new SwupSlideTheme()]
+})
 window.onload = function() {
-    let options = {LINK_SELECTOR: 'a',debugMode: true,};
-    const swup = new Swup({
-        options,
-        plugins: [new SwupSlideTheme()]
-    })
     let colorArray = document.querySelectorAll('.color-button')
     let colorSwitch = document.querySelector('.color-switch')
     let colorSwitchFlag = false;
