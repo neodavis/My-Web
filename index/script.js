@@ -9,12 +9,6 @@ window.onload = function() {
     let colorSwitchFlag = false;
     let linkArray = document.querySelectorAll('.navigation-item');
     let navIcons = document.querySelectorAll('.material-icons')
-    let redirectArr = Array.from(document.querySelectorAll('.link-redirect'))
-    redirectArr.forEach((e)=>{
-        e.onclick = function() {
-            window.location.href = e.dataset.redirect
-        }
-    })
     let themeSwitch = document.querySelector('.theme-switch')
     let themeSwitchFlag = false
     linkArray.forEach((e)=>{
