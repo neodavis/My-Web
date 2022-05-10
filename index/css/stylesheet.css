@@ -656,11 +656,12 @@ aside .portfolio-side .grid-container .grid-item button {
   width: 101%;
   margin-top: -2px;
   border-radius: 0 0 10px 10px;
-}
-aside .portfolio-side .grid-container .grid-item button a {
   color: var(--general-font);
   text-decoration: none;
   transition: 0.3s ease;
+}
+aside .portfolio-side .grid-container .grid-item button:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

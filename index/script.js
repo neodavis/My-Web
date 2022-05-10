@@ -3,6 +3,7 @@ const swup = new Swup({
     options,
     plugins: [new SwupSlideTheme()]
 })
+
 window.onload = function() {
     let colorArray = document.querySelectorAll('.color-button')
     let colorSwitch = document.querySelector('.color-switch')
@@ -12,11 +13,7 @@ window.onload = function() {
     let themeSwitch = document.querySelector('.theme-switch')
     let themeSwitchFlag = false
     let redirectArr = Array.from(document.querySelectorAll('.link-redirect'))
-    redirectArr.forEach((e)=>{
-        e.onclick = function() {
-            window.location.href = e.dataset.redirect
-        }
-    })
+
     linkArray.forEach((e)=>{
         linkArray.forEach((k)=>{
             k.classList.remove('active')
