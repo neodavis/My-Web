@@ -9,7 +9,12 @@ window.onload = function() {
     let colorSwitchFlag = false;
     let linkArray = document.querySelectorAll('.navigation-item');
     let navIcons = document.querySelectorAll('.material-icons')
-    console.log(navIcons)
+    let redirectArr = Array.from(document.querySelectorAll('.link-redirect'))
+    redirectArr.forEach((e)=>{
+        e.onclick = function() {
+            window.location.href = e.dataset.redirect
+        }
+    })
     let themeSwitch = document.querySelector('.theme-switch')
     let themeSwitchFlag = false
     linkArray.forEach((e)=>{
@@ -42,7 +47,6 @@ window.onload = function() {
                         break
                 }})
     
-    console.log(linkArray[1])
     linkArray.forEach((e)=>{
         e.onclick = function() {
             linkArray.forEach((k)=>{
@@ -77,7 +81,6 @@ window.onload = function() {
             }, 100);
         }
     })
-    console.log(getComputedStyle(document.documentElement).getPropertyValue('--light-bc'))
     themeSwitch.addEventListener('click', function() {
         if (!themeSwitchFlag) {
             document.querySelector('.theme-switch-img').style.transform = "rotate(720deg)"
