@@ -309,6 +309,7 @@ body h1, body h3 {
   box-shadow: 0px -16px 80px 3px var(--font-color);
 }
 .navigation-side ul li span {
+  color: var(--general-font);
   transition: 0.3s ease;
   transform: scale(1.4);
 }
@@ -574,6 +575,90 @@ aside .experience-side .grid-container div ul {
   padding: 50px 20px 50px 30px;
   border-radius: 20px;
   box-shadow: 0px -16px 77px -45px var(--font-color);
+  transition: 0.3s ease;
+}
+aside .portfolio-side h1 {
+  padding-left: 100px;
+  padding-top: 200px;
+  font-size: 50px;
+  width: fit-content;
+}
+aside .portfolio-side h1::after {
+  transition: 0.3s ease;
+  content: "";
+  display: block;
+  height: 5px;
+  width: 60%;
+  margin-top: 10px;
+  background-color: var(--general-font);
+  border-radius: 2px;
+}
+aside .portfolio-side h1::before {
+  transition: 0.3s ease;
+  content: "";
+  display: block;
+  height: 5px;
+  width: 30%;
+  margin-bottom: -75px;
+  background-color: var(--general-font);
+  border-radius: 2px;
+}
+aside .portfolio-side h3 {
+  margin-left: 100px;
+  margin-top: 65px;
+  font-size: 30px;
+  color: var(--general-font);
+  transition: 0.3s ease;
+}
+aside .portfolio-side .grid-container {
+  margin-top: 50px;
+  width: 85%;
+  margin-left: 100px;
+  display: grid;
+  height: 50%;
+  border-radius: 20px;
+  grid-column-gap: 120px;
+  grid-row-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 10px 10px 0 0;
+}
+aside .portfolio-side .grid-container .grid-item {
+  transition: 0.3s ease;
+  transition: 0.3s ease;
+  box-shadow: 0px 0px 50px -20px var(--font-color);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+}
+aside .portfolio-side .grid-container .grid-item .grid-item-image {
+  width: 320px;
+  height: 180px;
+  overflow: hidden;
+  padding: 5.3px;
+  padding-bottom: 0;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--background-color);
+  transition: 0.3s ease;
+}
+aside .portfolio-side .grid-container .grid-item:hover {
+  transform: scale(1.01);
+}
+aside .portfolio-side .grid-container .grid-item button {
+  transition: 0.3s ease;
+  padding: 5px;
+  border: 5px solid var(--background-color);
+  border-top: 0;
+  background-color: var(--background-lighten-color);
+  color: var(--general-font);
+  font-weight: bold;
+  width: 101%;
+  margin-top: -2px;
+  border-radius: 0 0 10px 10px;
+}
+aside .portfolio-side .grid-container .grid-item button a {
+  color: var(--general-font);
+  text-decoration: none;
   transition: 0.3s ease;
 }
 
