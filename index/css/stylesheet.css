@@ -516,7 +516,7 @@ aside .about-side table a:hover {
 }
 aside .experience-side .grid-container {
   margin-left: 80px;
-  padding-top: 50px;
+  padding-top: 8%;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 90px;
   display: grid;
