@@ -572,6 +572,7 @@ aside {
       grid-template-columns: 1fr 1fr 1fr;
       border-radius: 10px 10px 0 0;
       .grid-item {
+        cursor: pointer;
         transition: .3s ease;
         .grid-item-image {
           width: 320px;
