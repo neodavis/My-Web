@@ -193,11 +193,15 @@ body {
     transition: .3s ease;
     font-weight: bold;
     .logo {
-        background-color: var(--background-lighten-color);
         width: 150px;
-        height: 100px;
+        
+        transform: scale(2);
+        height: 75px;
         margin: 75px auto;
         transition: .3s ease;
+        img {
+          fill: var(--font-color);
+        }
     }
     ul {
         margin-top: 100px;
