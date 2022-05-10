@@ -196,7 +196,9 @@ body {
         width: 150px;
         transform: scale(2);
         height: 75px;
-        margin: 75px auto;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
         transition: .3s ease;
         img {
           fill: var(--font-color);
