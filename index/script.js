@@ -4,7 +4,7 @@ const swup = new Swup({
     plugins: [new SwupSlideTheme()]
 })
 window.onload = function() {
-    let themeSwitchFlag = false;
+    let themeSwitchFlag = true;
     let colorArray = document.querySelectorAll('.color-button')
     let colorSwitch = document.querySelector('.color-switch')
     let colorSwitchFlag = false;
