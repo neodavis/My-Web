@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Денис Щаблевский!</title>
+    <link rel="stylesheet" href="../index/css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav class="navigation-side">
+        <div class="logo"></div>
+        <ul class="navigation-list">
+            <li><span class="material-icons material-icons-outlined">home</span><a class="navigation-item" href="/pages/index.html">Головна</a></li>
+            <li><span class="material-icons material-icons-outlined">account_circle</span><a class="navigation-item" href="/pages/about.html">Про мене</a></li>
+            <li><span class="material-icons material-icons-outlined">engineering</span><a class="navigation-item"href="/pages/experience.html">Досвід</a></li>
+            <li><span class="material-icons material-icons-outlined">work</span><a class="navigation-item" href="/pages/portfolio.html">Портфоліо</a></li>
+            <li><span class="material-icons material-icons-outlined">share</span><a class="navigation-item" href="/pages/contact.html">Контакти</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <main id="swup" class="transition-fade main-side">
+            <h1 class="header-title">Привіт, мене звати <span class="header-name">Денис</span>! <br> <br>
+                Я - <span class="header-name">програміст</span>
+            </h1>
+            <p>Тривалий час я захоплююсь програмуванням та усіма пов'язаними із ним активностями. Наразі я займаюсь вивченням низки мов та інструментів програмування: HTML, SCSS, JavaScript, TypeScript, Angular.</p>
+            <a onclick="
+                Array.from(document.querySelectorAll('.navigation-item'))[1].classList.add('active');
+                Array.from(document.querySelectorAll('.navigation-item'))[1].classList.add('active')
+                Array.from(document.querySelectorAll('.navigation-item'))[0].classList.remove('active')
+                Array.from(document.querySelectorAll('.material-icons'))[0].classList.remove('active');
+            " class="navigation-item" href="/pages/about.html">Про мене</a>
+        </main>
+    </aside>
+    <ul class="color-switch">
+        <li><img src="../index/assets/color-image.png" class="color-palette"></img></li>
+        <li><div class="color-button" data-color="#4E9F3D"></div></li>
+        <li><div class="color-button" data-color="#1597BB"></div></li>
+        <li><div class="color-button" data-color="#FF7F50"></div></li>
+        <li><div class="color-button" data-color="#890F0D"></div></li>
+    </ul>
+    <button class="theme-switch"><img class="theme-switch-img" src="../index/assets/sun.png" alt=""></button>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script src="../node_modules/@swup/slide-theme/dist/SwupSlideTheme.min.js"></script>  
+    <script src="../index/script.js"></script>
+</body>
+</html>
