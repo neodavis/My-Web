@@ -150,6 +150,12 @@
                         Array.from(document.querySelectorAll('.material-icons'))[3].classList.add('active');
                         Array.from(document.querySelectorAll('.navigation-item'))[1].classList.remove('active')
                         Array.from(document.querySelectorAll('.material-icons'))[1].classList.remove('active');
+                        let redirectArr = Array.from(document.querySelectorAll('.link-redirect'))
+                        redirectArr.forEach((e)=>{
+                            e.onclick = function() {
+                                window.location.href = e.dataset.redirect
+                            }
+                        })
                         " class="navigation-item" href="/My-Web/pages/portfolio.html">Портфоліо</a></td>
                     <td class="noUnderline"><a onclick="
                         Array.from(document.querySelectorAll('.navigation-item'))[4].classList.add('active');

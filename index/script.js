@@ -30,6 +30,12 @@ window.onload = function() {
                     case 'portfolio.html':
                         navIcons[3].classList.add('active')     
                         linkArray[3].classList.add('active')
+                        let redirectArr = Array.from(document.querySelectorAll('.link-redirect'))
+                        redirectArr.forEach((e)=>{
+                            e.onclick = function() {
+                                window.location.href = e.dataset.redirect
+                            }
+                        })
                         break
                     case 'experience.html':
                         navIcons[2].classList.add('active')     
@@ -62,6 +68,12 @@ window.onload = function() {
                     case 'portfolio.html':
                         navIcons[3].classList.add('active')  
                         linkArray[3].classList.add('active')
+                        let redirectArr = Array.from(document.querySelectorAll('.link-redirect'))
+                        redirectArr.forEach((e)=>{
+                            e.onclick = function() {
+                                window.location.href = e.dataset.redirect
+                            }
+                        })
                         break
                     case 'experience.html':
                         navIcons[2].classList.add('active')  
