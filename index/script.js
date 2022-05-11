@@ -65,6 +65,7 @@ window.onload = function() {
         e.style.transition = 'none'
     })
     document.querySelector('h1').classList.add('disabled')
+    document.querySelector('.logo').style.transition = 'none'
     setTimeout(()=>{
         Array.from(document.querySelectorAll('main')).forEach((e)=>{
             e.style.transition = '0.3s ease'
@@ -100,6 +101,7 @@ window.onload = function() {
             e.style.transition = '0.3s ease'
         })
         document.querySelector('h1').classList.remove('disabled')
+        document.querySelector('.logo').style.transition = '.3s ease'
     }, 300)
     linkArray.forEach((e)=>{
         linkArray.forEach((k)=>{
