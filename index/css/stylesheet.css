@@ -518,6 +518,10 @@ aside .about-side table {
 aside .about-side table tr td {
   padding: 15px 0 15px 0;
 }
+aside .about-side table tr td .span-link:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
 aside .about-side table tr td:after {
   content: "";
   width: 100%;

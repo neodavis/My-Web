@@ -459,9 +459,11 @@ aside {
       
       tr {
         td {
-
           padding: 15px 0 15px 0;
-          
+          .span-link:hover {
+            cursor: pointer;
+            transform: scale(1.5);
+          }
           &:after {
             content: '';
             width: 100%;
