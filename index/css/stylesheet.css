@@ -378,6 +378,7 @@ aside .main-side .photo .right-top::after {
   top: -10px;
   left: -30px;
   transition: 0.3s ease;
+  box-shadow: 0px 0px 40px 0px var(--font-color);
 }
 aside .main-side .photo .right-top::before {
   content: "";
@@ -388,6 +389,7 @@ aside .main-side .photo .right-top::before {
   top: -10px;
   left: -30px;
   transition: 0.3s ease;
+  box-shadow: 0px 0px 40px 0px var(--font-color);
 }
 aside .main-side .photo .left-bottom::after {
   content: "";
@@ -398,6 +400,7 @@ aside .main-side .photo .left-bottom::after {
   bottom: -30px;
   right: -30px;
   transition: 0.3s ease;
+  box-shadow: 0px 0px 40px 0px var(--font-color);
 }
 aside .main-side .photo .left-bottom::before {
   content: "";
@@ -408,6 +411,7 @@ aside .main-side .photo .left-bottom::before {
   bottom: -30px;
   right: -45px;
   transition: 0.3s ease;
+  box-shadow: 0px 0px 40px 0px var(--font-color);
 }
 aside .main-side p {
   color: var(--general-font);

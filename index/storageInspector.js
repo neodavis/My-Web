@@ -26,10 +26,8 @@ if (localStorage.getItem('themeSwitchFlag')) {
     if (themeSwitchFlag) {
         document.documentElement.style.setProperty('--background-color', '#161516')
         document.documentElement.style.setProperty('--background-lighten-color', '#232123')
-        console.log('dark-theme')
     } else {
         document.documentElement.style.setProperty('--background-color', '#f4f4fe')
         document.documentElement.style.setProperty('--background-lighten-color', '#fefaff')
-        console.log('light-theme')
     }
 }
