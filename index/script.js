@@ -58,6 +58,13 @@ window.onload = function() {
     Array.from(document.querySelectorAll('button')).forEach((e)=>{
         e.style.transition = 'none'
     })
+    Array.from(document.querySelectorAll('h3')).forEach((e)=>{
+        e.style.transition = 'none'
+    })
+    Array.from(document.querySelectorAll('table')).forEach((e)=>{
+        e.style.transition = 'none'
+    })
+    document.querySelector('h1').classList.add('disabled')
     setTimeout(()=>{
         Array.from(document.querySelectorAll('main')).forEach((e)=>{
             e.style.transition = '0.3s ease'
@@ -86,6 +93,13 @@ window.onload = function() {
         Array.from(document.querySelectorAll('button')).forEach((e)=>{
             e.style.transition = '0.3s ease'
         })
+        Array.from(document.querySelectorAll('h3')).forEach((e)=>{
+            e.style.transition = '0.3s ease'
+        })
+        Array.from(document.querySelectorAll('table')).forEach((e)=>{
+            e.style.transition = '0.3s ease'
+        })
+        document.querySelector('h1').classList.remove('disabled')
     }, 300)
     linkArray.forEach((e)=>{
         linkArray.forEach((k)=>{

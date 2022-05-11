@@ -358,6 +358,28 @@ aside {
           background-color: var(--general-font);
           border-radius: 2px;
         }
+        &.disabled {
+          &::before {
+            transition: none;
+            content: "";
+            display: block;
+            height: 5px;
+            width: 30%;
+            margin-bottom: -75px;
+            background-color: var(--general-font);
+            border-radius: 2px;
+          }
+          &::after {
+            transition: none;
+            content: "";
+            display: block;
+            height: 5px;
+            width: 60%;
+            margin-top: 10px;
+            background-color: var(--general-font);
+            border-radius: 2px;
+          }
+        }
     }
     h3 {
       margin-left: 100px;
