@@ -12,7 +12,7 @@ window.onload = function() {
     let navIcons = document.querySelectorAll('.material-icons')
     let themeSwitch = document.querySelector('.theme-switch')
     let rotate = 0;
-
+    let transitionArray = []
     if (localStorage.getItem('--font-color')) {
         document.documentElement.style.setProperty('--font-color', localStorage.getItem('--font-color'))
     }
@@ -31,6 +31,62 @@ window.onload = function() {
     if (localStorage.getItem('theme-switch-img')) {
         document.querySelector('.theme-switch-img').src = localStorage.getItem('theme-switch-img')
     }
+    Array.from(document.querySelectorAll('main')).forEach((e)=>{
+            e.style.transition = 'none'
+    })
+    Array.from(document.querySelectorAll('h1')).forEach((e)=>{
+        e.style.transition = 'none'
+    })
+    Array.from(document.querySelectorAll('p')).forEach((e)=>{
+        e.style.transition = 'none'
+    })
+    Array.from(document.querySelectorAll('nav')).forEach((e)=>{
+        e.style.transition = 'none'
+    })
+    Array.from(document.querySelectorAll('li')).forEach((e)=>{
+        e.style.transition = 'none'
+    })
+    Array.from(document.querySelectorAll('span')).forEach((e)=>{
+        e.style.transition = 'none'
+    })
+    Array.from(document.querySelectorAll('a')).forEach((e)=>{
+        e.style.transition = 'none'
+    })
+    Array.from(document.querySelectorAll('ul')).forEach((e)=>{
+        e.style.transition = 'none'
+    })
+    Array.from(document.querySelectorAll('button')).forEach((e)=>{
+        e.style.transition = 'none'
+    })
+    setTimeout(()=>{
+        Array.from(document.querySelectorAll('main')).forEach((e)=>{
+            e.style.transition = '0.3s ease'
+        })
+        Array.from(document.querySelectorAll('h1')).forEach((e)=>{
+            e.style.transition = '0.3s ease'
+        })
+        Array.from(document.querySelectorAll('p')).forEach((e)=>{
+            e.style.transition = '0.3s ease'
+        })
+        Array.from(document.querySelectorAll('nav')).forEach((e)=>{
+            e.style.transition = '0.3s ease'
+        })
+        Array.from(document.querySelectorAll('li')).forEach((e)=>{
+            e.style.transition = '0.1s ease'
+        })
+        Array.from(document.querySelectorAll('span')).forEach((e)=>{
+            e.style.transition = '0.3s ease'
+        })
+        Array.from(document.querySelectorAll('a')).forEach((e)=>{
+            e.style.transition = '0.3s ease'
+        })
+        Array.from(document.querySelectorAll('ul')).forEach((e)=>{
+            e.style.transition = '0.3s ease'
+        })
+        Array.from(document.querySelectorAll('button')).forEach((e)=>{
+            e.style.transition = '0.3s ease'
+        })
+    }, 300)
     linkArray.forEach((e)=>{
         linkArray.forEach((k)=>{
             k.classList.remove('active')
