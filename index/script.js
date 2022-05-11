@@ -4,7 +4,9 @@ const swup = new Swup({
     plugins: [new SwupSlideTheme()]
 })
 window.onload = function() {
-    let themeSwitchFlag = true;
+    if (!localStorage.getItem('themeSwitchFlag')) {
+        themeSwitchFlag = true;
+    }
     let colorArray = document.querySelectorAll('.color-button')
     let colorSwitch = document.querySelector('.color-switch')
     let colorSwitchFlag = false;
@@ -12,97 +14,12 @@ window.onload = function() {
     let navIcons = document.querySelectorAll('.material-icons')
     let themeSwitch = document.querySelector('.theme-switch')
     let rotate = 0;
-    let transitionArray = []
-    if (localStorage.getItem('--font-color')) {
-        document.documentElement.style.setProperty('--font-color', localStorage.getItem('--font-color'))
-    }
-    if (localStorage.getItem('--general-font')) {
-        document.documentElement.style.setProperty('--general-font', localStorage.getItem('--general-font'))
-    }
-    if (localStorage.getItem('--background-color')) {
-        document.documentElement.style.setProperty('--background-color', localStorage.getItem('--background-color'))
-    }
-    if (localStorage.getItem('--background-lighten-color')) {
-        document.documentElement.style.setProperty('--background-lighten-color', localStorage.getItem('--background-lighten-color'))
-    }
-    if (localStorage.getItem('themeSwitchFlag')) {
-        themeSwitchFlag = JSON.parse(localStorage.getItem('themeSwitchFlag'))
-    }
+
+
     if (localStorage.getItem('theme-switch-img')) {
         document.querySelector('.theme-switch-img').src = localStorage.getItem('theme-switch-img')
     }
-    Array.from(document.querySelectorAll('main')).forEach((e)=>{
-            e.style.transition = 'none'
-    })
-    Array.from(document.querySelectorAll('h1')).forEach((e)=>{
-        e.style.transition = 'none'
-    })
-    Array.from(document.querySelectorAll('p')).forEach((e)=>{
-        e.style.transition = 'none'
-    })
-    Array.from(document.querySelectorAll('nav')).forEach((e)=>{
-        e.style.transition = 'none'
-    })
-    Array.from(document.querySelectorAll('li')).forEach((e)=>{
-        e.style.transition = 'none'
-    })
-    Array.from(document.querySelectorAll('span')).forEach((e)=>{
-        e.style.transition = 'none'
-    })
-    Array.from(document.querySelectorAll('a')).forEach((e)=>{
-        e.style.transition = 'none'
-    })
-    Array.from(document.querySelectorAll('ul')).forEach((e)=>{
-        e.style.transition = 'none'
-    })
-    Array.from(document.querySelectorAll('button')).forEach((e)=>{
-        e.style.transition = 'none'
-    })
-    Array.from(document.querySelectorAll('h3')).forEach((e)=>{
-        e.style.transition = 'none'
-    })
-    Array.from(document.querySelectorAll('table')).forEach((e)=>{
-        e.style.transition = 'none'
-    })
-    document.querySelector('h1').classList.add('disabled')
-    document.querySelector('.logo').style.transition = 'none'
-    setTimeout(()=>{
-        Array.from(document.querySelectorAll('main')).forEach((e)=>{
-            e.style.transition = '0.3s ease'
-        })
-        Array.from(document.querySelectorAll('h1')).forEach((e)=>{
-            e.style.transition = '0.3s ease'
-        })
-        Array.from(document.querySelectorAll('p')).forEach((e)=>{
-            e.style.transition = '0.3s ease'
-        })
-        Array.from(document.querySelectorAll('nav')).forEach((e)=>{
-            e.style.transition = '0.3s ease'
-        })
-        Array.from(document.querySelectorAll('li')).forEach((e)=>{
-            e.style.transition = '0.1s ease'
-        })
-        Array.from(document.querySelectorAll('span')).forEach((e)=>{
-            e.style.transition = '0.3s ease'
-        })
-        Array.from(document.querySelectorAll('a')).forEach((e)=>{
-            e.style.transition = '0.3s ease'
-        })
-        Array.from(document.querySelectorAll('ul')).forEach((e)=>{
-            e.style.transition = '0.3s ease'
-        })
-        Array.from(document.querySelectorAll('button')).forEach((e)=>{
-            e.style.transition = '0.3s ease'
-        })
-        Array.from(document.querySelectorAll('h3')).forEach((e)=>{
-            e.style.transition = '0.3s ease'
-        })
-        Array.from(document.querySelectorAll('table')).forEach((e)=>{
-            e.style.transition = '0.3s ease'
-        })
-        document.querySelector('h1').classList.remove('disabled')
-        document.querySelector('.logo').style.transition = '.3s ease'
-    }, 300)
+
     linkArray.forEach((e)=>{
         linkArray.forEach((k)=>{
             k.classList.remove('active')

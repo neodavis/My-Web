@@ -266,10 +266,7 @@ body h1, body h3 {
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 50px;
-  transition: 0.3s ease;
-}
-.navigation-side .logo img {
-  fill: var(--font-color);
+  transition: none;
 }
 .navigation-side ul {
   margin-top: 100px;
@@ -502,7 +499,8 @@ aside .about-side table tr td .slider::-webkit-slider-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: var(--general-font);
+  background: white;
+  border: 1px solid var(--general-font);
   cursor: default;
   transition: 0.3s ease;
 }
@@ -510,7 +508,8 @@ aside .about-side table tr td .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: var(--general-font);
+  background: white;
+  border: 1px solid var(--general-font);
   cursor: pointer;
   transition: 0.3s ease;
 }
