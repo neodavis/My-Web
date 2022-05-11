@@ -361,11 +361,59 @@ aside .main-side h1 span {
   transition: 0.3s ease;
   color: var(--font-color);
 }
+aside .main-side .photo {
+  position: absolute;
+  width: 400px;
+  height: 455px;
+  right: 150px;
+  top: 200px;
+  transition: 0.3s ease;
+}
+aside .main-side .photo .right-top::after {
+  content: "";
+  position: absolute;
+  background-color: var(--font-color);
+  width: 100px;
+  height: 15px;
+  top: -10px;
+  left: -30px;
+  transition: 0.3s ease;
+}
+aside .main-side .photo .right-top::before {
+  content: "";
+  position: absolute;
+  background-color: var(--font-color);
+  width: 15px;
+  height: 100px;
+  top: -10px;
+  left: -30px;
+  transition: 0.3s ease;
+}
+aside .main-side .photo .left-bottom::after {
+  content: "";
+  position: absolute;
+  background-color: var(--font-color);
+  width: 100px;
+  height: 15px;
+  bottom: -30px;
+  right: -30px;
+  transition: 0.3s ease;
+}
+aside .main-side .photo .left-bottom::before {
+  content: "";
+  position: absolute;
+  background-color: var(--font-color);
+  width: 15px;
+  height: 100px;
+  bottom: -30px;
+  right: -45px;
+  transition: 0.3s ease;
+}
 aside .main-side p {
   color: var(--general-font);
   transition: 0.3s ease;
   line-height: 30px;
-  width: 800px;
+  width: 700px;
   font-size: 25px;
   margin-left: 100px;
   margin-top: 50px;
@@ -567,6 +615,7 @@ aside .experience-side .grid-container div h3::before {
   position: absolute;
   margin-top: -5px;
   margin-left: -44.5px;
+  transition: 0.3s ease;
 }
 aside .experience-side .grid-container div h2 {
   font-size: 30px;

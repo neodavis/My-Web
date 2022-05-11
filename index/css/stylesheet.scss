@@ -299,11 +299,59 @@ aside {
               color: var(--font-color)
           }
       }
+      .photo {
+          position: absolute;
+          width: 400px;
+          height: 455px;
+          right: 150px;
+          top: 200px;
+          transition: .3s ease;
+          .right-top::after {
+            content: '';
+            position: absolute;
+            background-color: var(--font-color);;
+            width: 100px;
+            height: 15px;
+            top: -10px;
+            left: -30px;
+            transition: .3s ease;
+          }
+          .right-top::before {
+            content: '';
+            position: absolute;
+            background-color: var(--font-color);
+            width: 15px;
+            height: 100px;
+            top: -10px;
+            left: -30px;
+            transition: .3s ease;
+          }
+          .left-bottom::after {
+              content: '';
+              position: absolute;
+              background-color: var(--font-color);
+              width: 100px;
+              height: 15px;
+              bottom: -30px;
+              right: -30px;
+              transition: .3s ease;
+          }
+          .left-bottom::before {
+              content: '';
+              position: absolute;
+              background-color: var(--font-color);
+              width: 15px;
+              height: 100px;
+              bottom: -30px;
+              right: -45px;
+              transition: .3s ease;
+          }
+        }
       p {
           color: var(--general-font);
           transition: .3s ease;
           line-height: 30px;
-          width: 800px;
+          width: 700px;
           font-size: 25px;
           margin-left: 100px;
           margin-top: 50px;
